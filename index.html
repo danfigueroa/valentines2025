@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Para Kauanny ❤️</title>
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Para Kauanny">
+    <meta name="theme-color" content="#ff6b9d">
+    
+
+    <meta name="format-detection" content="telephone=no">
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-image">
+                <img src="IMG_4839.png" alt="Foto especial" class="welcome-photo">
+            </div>
+            <div class="heart-animation">
+                <div class="heart">❤️</div>
+            </div>
+            <h1>Olá, meu amor!</h1>
+            <p>Preparei algo especial para você...</p>
+            <button onclick="startGame()" class="btn-primary">Começar nossa aventura ❤️</button>
+        </div>
+
+
+        <div id="game-screen" class="screen">
+            <div class="progress-bar">
+                <div id="progress" class="progress-fill"></div>
+            </div>
+            <div class="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container" class="options"></div>
+            </div>
+        </div>
+
+
+        <div id="final-screen" class="screen">
+            <div class="celebration">
+                <div class="hearts-rain"></div>
+                <h1>Eu te amo, Kauanny! ❤️</h1>
+                
+
+                <div class="score-container">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="score-total">/150</span>
+                    </div>
+                    <div id="score-message" class="score-message"></div>
+                </div>
+                
+
+                <div class="photo-frame">
+                    <img src="IMG_4839.png" alt="Nossa foto especial" class="final-photo">
+                </div>
+                
+                <div class="final-buttons">
+                    <button onclick="restartGame()" class="btn-secondary">Tentar conseguir 150 pontos! 💖</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
